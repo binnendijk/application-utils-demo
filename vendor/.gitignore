@@ -1,0 +1,6 @@
+!.gitignore
+.composer
+composer
+zendframework
+alin-purcaru
+autoload.php
