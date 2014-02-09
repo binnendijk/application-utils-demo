@@ -13,7 +13,7 @@ class IndexController extends AbstractActionController
     {
         // crude demo usage //
         header('Content-type: application/png');
-        $qrCode = new QrCode('TrekkSoft', 50, 50); // text, width, height
+        $qrCode = new QrCode('http://alin.purcaru.com', 50, 50); // text, width, height
         $qrCode->setRenderer(new GoogleChartsRenderer());
         $qrCodeData = $qrCode->generate(); // should return the image data, not the URL
         exit ($qrCodeData);
